@@ -1,19 +1,12 @@
-<p align="center">
-    <img src ="Resources/Logo.png" width=600 />
-</p>
+## About MathKeys 
 
-<p align="center">
-    <a href="https://github.com/danielsaidi/KeyboardKit">
-        <img src="https://badge.fury.io/gh/danielsaidi%2FKeyboardKit.svg?style=flat" alt="Version" />
-    </a>
-    <img src="https://img.shields.io/cocoapods/p/KeyboardKit.svg?style=flat" alt="Platform" />
-    <img src="https://img.shields.io/badge/Swift-5.1-orange.svg" alt="Swift 5.1" />
-    <img src="https://badges.frapsoft.com/os/mit/mit.svg?style=flat&v=102" alt="License" />
-    <a href="https://twitter.com/danielsaidi">
-        <img src="https://img.shields.io/badge/contact-@danielsaidi-blue.svg?style=flat" alt="Twitter: @danielsaidi" />
-    </a>
-</p>
+MathKeys is a keyboard designed for typing Math on iPhones in any app. Most of the work is based on KeyboardKit by @danielsaidi at https://github.com/danielsaidi/KeyboardKit.git 
 
+## Installation and customisation 
+
+If you want to install the keyboard onto your iPhone, simply clone the project, open `KeyboardKit.xcodeproj`, obtain an Apple Developer Certificate (which is now completely free) and finally plug in your iPhone and install the app onto your phone. Once this is done, you should be able to add the MathKeys Keyboard in `Settings -> General -> Keyboards`. 
+
+If you want to customise the symbols and the layout, simply edit the desired files in `MathKeysKeyboardKit/Keyboards`. 
 
 ## About KeyboardKit
 
