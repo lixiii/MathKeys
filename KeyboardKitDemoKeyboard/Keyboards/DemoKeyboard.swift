@@ -20,11 +20,8 @@ protocol DemoKeyboard {}
 extension DemoKeyboard {
     
     static func bottomActions(leftmost: KeyboardAction, for vc: KeyboardViewController) -> KeyboardActionRow {
-        let actions = [leftmost, switchAction(for: vc), .space, imageAction(for: vc), .newLine]
-        let isEmoji = vc.keyboardType == .emojis
-        let isImage = vc.keyboardType == .images
-        let includeImageActions = !isEmoji && !isImage
-        return includeImageActions ? actions : actions.withoutImageActions
+        let actions = [leftmost,.switchKeyboard, .switchToKeyboard(.greek), .space, .switchToKeyboard(.symbolic), .newLine]
+        return actions
     }
 }
 

@@ -29,6 +29,7 @@ extension KeyboardViewController {
         case .images: setupImageKeyboard(for: size)
         case .numeric: setupNumericKeyboard()
         case .symbolic: setupSymbolicKeyboard()
+        case .greek: setupGreekKeyboard()
         default: return
         }
     }
@@ -71,6 +72,12 @@ extension KeyboardViewController {
     
     func setupSymbolicKeyboard() {
         let keyboard = SymbolicKeyboard(in: self)
+        let rows = buttonRows(for: keyboard.actions, distribution: .fillProportionally)
+        keyboardStackView.addArrangedSubviews(rows)
+    }
+    
+    func setupGreekKeyboard() {
+        let keyboard = GreekKeyboard(in: self)
         let rows = buttonRows(for: keyboard.actions, distribution: .fillProportionally)
         keyboardStackView.addArrangedSubviews(rows)
     }

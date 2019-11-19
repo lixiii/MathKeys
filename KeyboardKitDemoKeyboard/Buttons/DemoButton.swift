@@ -92,10 +92,10 @@ private extension KeyboardAction {
     func buttonText(for keyboardType: KeyboardType) -> String {
         switch keyboardType {
         case .alphabetic: return "ABC"
-        case .emojis: return "🙂"
-        case .images: return "🖼️"
+        case .emojis: return "🤩"
         case .numeric: return "123"
-        case .symbolic: return "#+="
+        case .symbolic: return "∫√∑"
+        case .greek: return "𝞴𝞮𝞭"
         default: return "???"
         }
     }

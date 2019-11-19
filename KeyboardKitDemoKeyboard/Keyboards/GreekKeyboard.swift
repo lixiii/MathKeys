@@ -1,17 +1,16 @@
 //
-//  NumericKeyboard.swift
-//  KeyboardKitExampleKeyboard
+//  GreekKeyboard.swift
+//  KeyboardKitDemoKeyboard
 //
-//  Created by Daniel Saidi on 2019-05-13.
-//  Copyright © 2019 Daniel Saidi. All rights reserved.
+//  Created by Li Xi on 19/11/2019.
 //
 
 import KeyboardKit
 
 /**
- This demo keyboard mimicks an English numeric keyboard.
+ This demo keyboard mimicks an English symbolic keyboard.
  */
-struct NumericKeyboard: DemoKeyboard {
+struct GreekKeyboard: DemoKeyboard {
     
     init(in viewController: KeyboardViewController) {
         actions = type(of: self).actions(in: viewController)
@@ -20,7 +19,7 @@ struct NumericKeyboard: DemoKeyboard {
     let actions: KeyboardActionRows
 }
 
-private extension NumericKeyboard {
+private extension GreekKeyboard {
     
     static func actions(in viewController: KeyboardViewController) -> KeyboardActionRows {
         return KeyboardActionRows
@@ -29,10 +28,10 @@ private extension NumericKeyboard {
             .appending(bottomActions(leftmost: switchAction, for: viewController))
     }
     
-    static let characters: [[String]] = [
-         ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"],
-         ["(", ")", "{", "}", "^", "_", "𝛼", "𝛽", "x", "y", "z"],
-         ["+", "-", "*", "/", "=", "≈"]
+    static var characters: [[String]] = [
+        ["𝛼", "𝛽", "𝛾", "𝛿", "𝜀", "𝜁", "𝜂", "𝜃", "𝜅", "𝜆"],
+        ["𝜇", "𝜈", "𝜉", "𝜌", "𝜎", "𝜏", "𝜑", "𝜙", "𝜓", "𝜋"],
+        ["𝜒", "𝜔", "𝝙", "𝛤", "𝛬", "𝛺", "𝛷", "𝛹", "𝛳"]
     ]
     
     static var switchAction: KeyboardAction {
@@ -44,7 +43,7 @@ private extension Sequence where Iterator.Element == KeyboardActionRow {
     
     func addingSideActions() -> [Iterator.Element] {
         var actions = map { $0 }
-        actions[2].insert(.switchToKeyboard(.symbolic), at: 0)
+        actions[2].insert(.switchToKeyboard(.numeric), at: 0)
         actions[2].insert(.none, at: 1)
         actions[2].append(.none)
         actions[2].append(.backspace)
