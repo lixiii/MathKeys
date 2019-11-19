@@ -8,6 +8,10 @@ If you want to install the keyboard onto your iPhone, simply clone the project, 
 
 If you want to customise the symbols and the layout, simply edit the desired files in `MathKeysKeyboardKit/Keyboards`. 
 
+<p align="center">
+    <img src ="Resources/mathdemo.gif" />
+</p>
+
 ## About KeyboardKit
 
 `KeyboardKit` is a Swift library that helps you create keyboard extensions for iOS. It supports many keyboard actions and keyboard types and lets you create keyboards with text inputs, emojis, actions, images etc.
