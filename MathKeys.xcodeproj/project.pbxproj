@@ -37,7 +37,7 @@
 		8467044F234A709400355331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8467044D234A709400355331 /* Main.storyboard */; };
 		84670454234A709500355331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84670452234A709500355331 /* LaunchScreen.storyboard */; };
 		84670460234A711100355331 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467045F234A711100355331 /* KeyboardViewController.swift */; };
-		84670464234A711100355331 /* MathKeys.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8467045D234A711100355331 /* MathKeys.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84670464234A711100355331 /* MathKeys Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8467045D234A711100355331 /* MathKeys Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		84670488234A718C00355331 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467046A234A718C00355331 /* Assets.swift */; };
 		84670489234A718C00355331 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8467046B234A718C00355331 /* Colors.xcassets */; };
 		8467048A234A718C00355331 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8467046C234A718C00355331 /* Images.xcassets */; };
@@ -391,7 +391,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				84670464234A711100355331 /* MathKeys.appex in Embed App Extensions */,
+				84670464234A711100355331 /* MathKeys Keyboard.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,7 +440,7 @@
 		8467044E234A709400355331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84670453234A709500355331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84670455234A709500355331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8467045D234A711100355331 /* MathKeys.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MathKeys.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8467045D234A711100355331 /* MathKeys Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MathKeys Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8467045F234A711100355331 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		84670461234A711100355331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8467046A234A718C00355331 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
@@ -1254,7 +1254,7 @@
 				"KeyboardKit::KeyboardKit::Product" /* KeyboardKit.framework */,
 				"Nimble::Nimble::Product" /* Nimble.framework */,
 				84670445234A709400355331 /* MathKeys.app */,
-				8467045D234A711100355331 /* MathKeys.appex */,
+				8467045D234A711100355331 /* MathKeys Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -1541,7 +1541,7 @@
 			);
 			name = MathKeysKeyboardKit;
 			productName = KeyboardKitDemoKeyboard;
-			productReference = 8467045D234A711100355331 /* MathKeys.appex */;
+			productReference = 8467045D234A711100355331 /* MathKeys Keyboard.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		"KeyboardKit::KeyboardKit" /* KeyboardKit */ = {
@@ -2407,7 +2407,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lixiii.MathKeys.app.keyboard;
-				PRODUCT_NAME = MathKeys;
+				PRODUCT_NAME = "MathKeys Keyboard";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
@@ -2465,7 +2465,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lixiii.MathKeys.app.keyboard;
-				PRODUCT_NAME = MathKeys;
+				PRODUCT_NAME = "MathKeys Keyboard";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2491,7 +2491,7 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lixiii.MathKeys;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lixiii.MathKeys.KeyboardKit;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = KeyboardKit;
 				SKIP_INSTALL = YES;
@@ -2521,7 +2521,7 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lixiii.MathKeys;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lixiii.MathKeys.KeyboardKit;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = KeyboardKit;
 				SKIP_INSTALL = YES;
