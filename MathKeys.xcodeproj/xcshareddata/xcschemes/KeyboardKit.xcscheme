@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "9999"
+   LastUpgradeVersion = "1120"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -17,7 +17,7 @@
                BlueprintIdentifier = "KeyboardKit::KeyboardKit"
                BuildableName = "KeyboardKit.framework"
                BlueprintName = "KeyboardKit"
-               ReferencedContainer = "container:KeyboardKit.xcodeproj">
+               ReferencedContainer = "container:MathKeys.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "84670444234A709400355331"
                BuildableName = "MathKeys.app"
                BlueprintName = "MathKeys"
-               ReferencedContainer = "container:KeyboardKit.xcodeproj">
+               ReferencedContainer = "container:MathKeys.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "KeyboardKit::KeyboardKitTests"
                BuildableName = "KeyboardKitTests.xctest"
                BlueprintName = "KeyboardKitTests"
-               ReferencedContainer = "container:KeyboardKit.xcodeproj">
+               ReferencedContainer = "container:MathKeys.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,7 +71,7 @@
             BlueprintIdentifier = "84670444234A709400355331"
             BuildableName = "MathKeys.app"
             BlueprintName = "MathKeys"
-            ReferencedContainer = "container:KeyboardKit.xcodeproj">
+            ReferencedContainer = "container:MathKeys.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -87,7 +87,7 @@
             BlueprintIdentifier = "KeyboardKit::KeyboardKit"
             BuildableName = "KeyboardKit.framework"
             BlueprintName = "KeyboardKit"
-            ReferencedContainer = "container:KeyboardKit.xcodeproj">
+            ReferencedContainer = "container:MathKeys.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

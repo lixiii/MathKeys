@@ -37,7 +37,7 @@
 		8467044F234A709400355331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8467044D234A709400355331 /* Main.storyboard */; };
 		84670454234A709500355331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84670452234A709500355331 /* LaunchScreen.storyboard */; };
 		84670460234A711100355331 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467045F234A711100355331 /* KeyboardViewController.swift */; };
-		84670464234A711100355331 /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8467045D234A711100355331 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84670464234A711100355331 /* MathKeys.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8467045D234A711100355331 /* MathKeys.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		84670488234A718C00355331 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467046A234A718C00355331 /* Assets.swift */; };
 		84670489234A718C00355331 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8467046B234A718C00355331 /* Colors.xcassets */; };
 		8467048A234A718C00355331 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8467046C234A718C00355331 /* Images.xcassets */; };
@@ -108,7 +108,6 @@
 		846704DA234A728400355331 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 84670487234A718C00355331 /* image.png */; };
 		8467050C234A745A00355331 /* KeyboardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "KeyboardKit::KeyboardKit::Product" /* KeyboardKit.framework */; };
 		8467050D234A745A00355331 /* KeyboardKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "KeyboardKit::KeyboardKit::Product" /* KeyboardKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		84670511234A745E00355331 /* KeyboardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "KeyboardKit::KeyboardKit::Product" /* KeyboardKit.framework */; };
 		84670512234A745E00355331 /* KeyboardKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "KeyboardKit::KeyboardKit::Product" /* KeyboardKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		847060002355A18700B2B2A8 /* HapticFeedbackConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84705FFF2355A18700B2B2A8 /* HapticFeedbackConfiguration.swift */; };
 		847060032355A2A900B2B2A8 /* HapticFeedbackConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847060012355A26A00B2B2A8 /* HapticFeedbackConfigurationTests.swift */; };
@@ -392,7 +391,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				84670464234A711100355331 /* Keyboard.appex in Embed App Extensions */,
+				84670464234A711100355331 /* MathKeys.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,7 +440,7 @@
 		8467044E234A709400355331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84670453234A709500355331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84670455234A709500355331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8467045D234A711100355331 /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8467045D234A711100355331 /* MathKeys.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MathKeys.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		8467045F234A711100355331 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		84670461234A711100355331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8467046A234A718C00355331 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
@@ -699,7 +698,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2254FA223847FA7001FF817 /* KeyboardKit.framework in Frameworks */,
-				84670511234A745E00355331 /* KeyboardKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,7 +786,7 @@
 			name = "Project Files";
 			sourceTree = "<group>";
 		};
-		84670446234A709400355331 /* KeyboardKitDemo */ = {
+		84670446234A709400355331 /* MathKeysApp */ = {
 			isa = PBXGroup;
 			children = (
 				84670469234A718C00355331 /* Assets */,
@@ -797,10 +795,10 @@
 				84670449234A709400355331 /* SceneDelegate.swift */,
 				8467044B234A709400355331 /* ViewController.swift */,
 			);
-			path = KeyboardKitDemo;
+			path = MathKeysApp;
 			sourceTree = "<group>";
 		};
-		8467045E234A711100355331 /* KeyboardKitDemoKeyboard */ = {
+		8467045E234A711100355331 /* MathKeysKeyboardKit */ = {
 			isa = PBXGroup;
 			children = (
 				846704B1234A725300355331 /* Autocomplete */,
@@ -813,7 +811,7 @@
 				84086E2F235587DC0030D95A /* KeyboardViewController+Buttons.swift */,
 				84086E3323558C0F0030D95A /* KeyboardViewController+Setup.swift */,
 			);
-			path = KeyboardKitDemoKeyboard;
+			path = MathKeysKeyboardKit;
 			sourceTree = "<group>";
 		};
 		84670469234A718C00355331 /* Assets */ = {
@@ -1256,7 +1254,7 @@
 				"KeyboardKit::KeyboardKit::Product" /* KeyboardKit.framework */,
 				"Nimble::Nimble::Product" /* Nimble.framework */,
 				84670445234A709400355331 /* MathKeys.app */,
-				8467045D234A711100355331 /* Keyboard.appex */,
+				8467045D234A711100355331 /* MathKeys.appex */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -1303,8 +1301,8 @@
 				OBJ_7 /* Sources */,
 				OBJ_74 /* Tests */,
 				OBJ_132 /* Dependencies */,
-				84670446234A709400355331 /* KeyboardKitDemo */,
-				8467045E234A711100355331 /* KeyboardKitDemoKeyboard */,
+				84670446234A709400355331 /* MathKeysApp */,
+				8467045E234A711100355331 /* MathKeysKeyboardKit */,
 				OBJ_231 /* Products */,
 				OBJ_238 /* Resources */,
 				OBJ_239 /* Fastlane */,
@@ -1526,9 +1524,9 @@
 			productReference = 84670445234A709400355331 /* MathKeys.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8467045C234A711100355331 /* KeyboardKitDemoKeyboard */ = {
+		8467045C234A711100355331 /* MathKeysKeyboardKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84670465234A711100355331 /* Build configuration list for PBXNativeTarget "KeyboardKitDemoKeyboard" */;
+			buildConfigurationList = 84670465234A711100355331 /* Build configuration list for PBXNativeTarget "MathKeysKeyboardKit" */;
 			buildPhases = (
 				84670459234A711100355331 /* Sources */,
 				8467045A234A711100355331 /* Frameworks */,
@@ -1541,9 +1539,9 @@
 				84670514234A745E00355331 /* PBXTargetDependency */,
 				C2254FA423847FA7001FF817 /* PBXTargetDependency */,
 			);
-			name = KeyboardKitDemoKeyboard;
+			name = MathKeysKeyboardKit;
 			productName = KeyboardKitDemoKeyboard;
-			productReference = 8467045D234A711100355331 /* Keyboard.appex */;
+			productReference = 8467045D234A711100355331 /* MathKeys.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		"KeyboardKit::KeyboardKit" /* KeyboardKit */ = {
@@ -1714,7 +1712,7 @@
 			attributes = {
 				LastSwiftMigration = 9999;
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 9999;
+				LastUpgradeCheck = 1120;
 				TargetAttributes = {
 					84670444234A709400355331 = {
 						CreatedOnToolsVersion = 11.0;
@@ -1731,7 +1729,7 @@
 					};
 				};
 			};
-			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "KeyboardKit" */;
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "MathKeys" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1749,7 +1747,7 @@
 				"KeyboardKit::KeyboardKitPackageTests::ProductTarget" /* KeyboardKitPackageTests */,
 				"KeyboardKit::KeyboardKitTests" /* KeyboardKitTests */,
 				84670444234A709400355331 /* MathKeys */,
-				8467045C234A711100355331 /* KeyboardKitDemoKeyboard */,
+				8467045C234A711100355331 /* MathKeysKeyboardKit */,
 				"Mockery::Mockery" /* Mockery */,
 				"Mockery::SwiftPMPackageDescription" /* MockeryPackageDescription */,
 				"Nimble::Nimble" /* Nimble */,
@@ -2158,7 +2156,7 @@
 /* Begin PBXTargetDependency section */
 		84670463234A711100355331 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8467045C234A711100355331 /* KeyboardKitDemoKeyboard */;
+			target = 8467045C234A711100355331 /* MathKeysKeyboardKit */;
 			targetProxy = 84670462234A711100355331 /* PBXContainerItemProxy */;
 		};
 		8467050F234A745A00355331 /* PBXTargetDependency */ = {
@@ -2283,7 +2281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = KeyboardKitDemo/Info.plist;
+				INFOPLIST_FILE = MathKeysApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -2292,7 +2290,7 @@
 				PRODUCT_NAME = MathKeys;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -2342,7 +2340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = KeyboardKitDemo/Info.plist;
+				INFOPLIST_FILE = MathKeysApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -2350,7 +2348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lixiii.MathKeys.app;
 				PRODUCT_NAME = MathKeys;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -2403,17 +2401,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = KeyboardKitDemoKeyboard/Info.plist;
+				INFOPLIST_FILE = MathKeysKeyboardKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lixiii.MathKeys.app.keyboard;
-				PRODUCT_NAME = Keyboard;
+				PRODUCT_NAME = MathKeys;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -2461,16 +2459,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = KeyboardKitDemoKeyboard/Info.plist;
+				INFOPLIST_FILE = MathKeysKeyboardKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lixiii.MathKeys.app.keyboard;
-				PRODUCT_NAME = Keyboard;
+				PRODUCT_NAME = MathKeys;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -2479,7 +2477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				DEVELOPMENT_TEAM = 9XJEL6YASK;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2487,7 +2485,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = KeyboardKit.xcodeproj/KeyboardKit_Info.plist;
+				INFOPLIST_FILE = MathKeys.xcodeproj/KeyboardKit_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MARKETING_VERSION = 2.5.0;
 				OTHER_CFLAGS = "$(inherited)";
@@ -2500,7 +2498,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TARGET_NAME = KeyboardKit;
 			};
 			name = Debug;
@@ -2509,7 +2507,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				DEVELOPMENT_TEAM = 9XJEL6YASK;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2517,7 +2515,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = KeyboardKit.xcodeproj/KeyboardKit_Info.plist;
+				INFOPLIST_FILE = MathKeys.xcodeproj/KeyboardKit_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MARKETING_VERSION = 2.5.0;
 				OTHER_CFLAGS = "$(inherited)";
@@ -2530,7 +2528,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TARGET_NAME = KeyboardKit;
 			};
 			name = Release;
@@ -2539,17 +2537,43 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
 				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
@@ -2595,8 +2619,8 @@
 		OBJ_319 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -2619,8 +2643,8 @@
 		OBJ_320 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -2760,15 +2784,40 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2946,7 +2995,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84670465234A711100355331 /* Build configuration list for PBXNativeTarget "KeyboardKitDemoKeyboard" */ = {
+		84670465234A711100355331 /* Build configuration list for PBXNativeTarget "MathKeysKeyboardKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84670466234A711100355331 /* Debug */,
@@ -2955,7 +3004,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_2 /* Build configuration list for PBXProject "KeyboardKit" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "MathKeys" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_3 /* Debug */,

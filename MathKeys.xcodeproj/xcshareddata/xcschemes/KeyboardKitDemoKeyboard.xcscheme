@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1100"
+   LastUpgradeVersion = "1120"
    wasCreatedForAppExtension = "YES"
    version = "2.0">
    <BuildAction
@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8467045C234A711100355331"
-               BuildableName = "MathKeysKeyboard.appex"
-               BlueprintName = "KeyboardKitDemoKeyboard"
-               ReferencedContainer = "container:KeyboardKit.xcodeproj">
+               BuildableName = "Keyboard.appex"
+               BlueprintName = "MathKeysKeyboardKit"
+               ReferencedContainer = "container:MathKeys.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -32,7 +32,7 @@
                BlueprintIdentifier = "84670444234A709400355331"
                BuildableName = "MathKeys.app"
                BlueprintName = "MathKeys"
-               ReferencedContainer = "container:KeyboardKit.xcodeproj">
+               ReferencedContainer = "container:MathKeys.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "84670444234A709400355331"
             BuildableName = "MathKeys.app"
             BlueprintName = "MathKeys"
-            ReferencedContainer = "container:KeyboardKit.xcodeproj">
+            ReferencedContainer = "container:MathKeys.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -82,7 +82,7 @@
             BlueprintIdentifier = "84670444234A709400355331"
             BuildableName = "MathKeys.app"
             BlueprintName = "MathKeys"
-            ReferencedContainer = "container:KeyboardKit.xcodeproj">
+            ReferencedContainer = "container:MathKeys.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
