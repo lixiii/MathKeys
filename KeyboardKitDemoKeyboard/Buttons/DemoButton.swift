@@ -95,7 +95,8 @@ private extension KeyboardAction {
         case .emojis: return "🤩"
         case .numeric: return "123"
         case .symbolic: return "∫√∑"
-        case .greek: return "𝞴𝞮𝞭"
+        case .greek: return "𝛼𝛽𝛾"
+        case .more: return "..."
         default: return "???"
         }
     }

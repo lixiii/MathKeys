@@ -25,5 +25,6 @@ public enum KeyboardType: Equatable {
     emojis,
     images,
     greek,
+    more,
     custom(_ name: String)
 }

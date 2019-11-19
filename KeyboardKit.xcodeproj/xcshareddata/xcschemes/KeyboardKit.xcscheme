@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "84670444234A709400355331"
-               BuildableName = "KeyboardKitDemo.app"
-               BlueprintName = "KeyboardKitDemo"
+               BuildableName = "MathKeys.app"
+               BlueprintName = "MathKeys"
                ReferencedContainer = "container:KeyboardKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -69,8 +69,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84670444234A709400355331"
-            BuildableName = "KeyboardKitDemo.app"
-            BlueprintName = "KeyboardKitDemo"
+            BuildableName = "MathKeys.app"
+            BlueprintName = "MathKeys"
             ReferencedContainer = "container:KeyboardKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

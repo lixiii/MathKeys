@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gzq-Ta-bxJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gzq-Ta-bxJ">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--KeyboardKit-->
+        <!--MathKeys-->
         <scene sceneID="um7-ao-UTd">
             <objects>
                 <tableViewController id="eyr-F7-gZd" sceneMemberID="viewController">
@@ -80,7 +81,7 @@
                             <outlet property="delegate" destination="eyr-F7-gZd" id="7B8-6v-9Js"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="KeyboardKit" id="gws-UJ-2SU"/>
+                    <navigationItem key="navigationItem" title="MathKeys" id="gws-UJ-2SU"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tdt-EJ-VWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,7 +90,7 @@
         <!--KeyboardKit Demo-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="KeyboardKit Demo" id="BYZ-38-t0r" customClass="ViewController" customModule="KeyboardKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="KeyboardKit Demo" id="BYZ-38-t0r" customClass="ViewController" customModule="MathKeys" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,7 +142,7 @@
         <!--KeyboardKit Demo-->
         <scene sceneID="ERc-im-r9v">
             <objects>
-                <viewController title="KeyboardKit Demo" id="bTr-tv-dRb" customClass="ViewController" customModule="KeyboardKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="KeyboardKit Demo" id="bTr-tv-dRb" customClass="ViewController" customModule="MathKeys" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NjH-6o-cgU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

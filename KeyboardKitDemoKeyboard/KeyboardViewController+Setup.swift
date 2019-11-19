@@ -30,6 +30,7 @@ extension KeyboardViewController {
         case .numeric: setupNumericKeyboard()
         case .symbolic: setupSymbolicKeyboard()
         case .greek: setupGreekKeyboard()
+        case .more: setupMoreKeyboard(for: size)
         default: return
         }
     }
@@ -80,5 +81,17 @@ extension KeyboardViewController {
         let keyboard = GreekKeyboard(in: self)
         let rows = buttonRows(for: keyboard.actions, distribution: .fillProportionally)
         keyboardStackView.addArrangedSubviews(rows)
+    }
+    
+    func setupMoreKeyboard(for size: CGSize) {
+        let keyboard = MoreKeyboard(in: self)
+        let isLandscape = size.width > 400
+        let rowsPerPage = isLandscape ? 4 : 5
+        let buttonsPerRow = isLandscape ? 10 : 8
+        let config = KeyboardButtonRowCollectionView.Configuration(rowHeight: 40, rowsPerPage: rowsPerPage, buttonsPerRow: buttonsPerRow)
+        let view = KeyboardButtonRowCollectionView(actions: keyboard.actions, configuration: config) { [unowned self] in return self.button(for: $0) }
+        let bottom = buttonRow(for: keyboard.bottomActions, distribution: .fillProportionally)
+        keyboardStackView.addArrangedSubview(view)
+        keyboardStackView.addArrangedSubview(bottom)
     }
 }
